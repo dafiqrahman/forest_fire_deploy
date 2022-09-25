@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.markdown("<h1 style='text-align: center;'>Mask Detection vs Mask Recognition</h1>",
+st.markdown("<h1 style='text-align: center;'>Forest Fire Detection</h1>",
             unsafe_allow_html=True)
 
 
