@@ -35,7 +35,7 @@ class Predict(nn.Module):
         self.label2cat = [" Fire", "No Fire"]
         self.model = ForestFireRecognition()
         self.model.load_state_dict(torch.load(
-            "./artifact/best_weight.pth", map_location='cpu'))
+            "./artifact/mobilenetv3_98.pth", map_location='cpu'))
         self.model.eval()
 
     def predict(self, img):

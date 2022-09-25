@@ -7,7 +7,7 @@ import cv2
 import os
 from datetime import datetime
 
-st.markdown("<h1 style='text-align: center;'>😷Mask Recognition Application</h1>",
+st.markdown("<h1 style='text-align: center;'>Forest Fire Detection Application</h1>",
             unsafe_allow_html=True)
 
 st.markdown("<h4>🖼  Detect From Image</h4>", unsafe_allow_html=True)
@@ -37,7 +37,7 @@ if vid is not None:
     with open(vidpath, mode="wb") as f:
         f.write(vid.getbuffer())
     vid = cv2.VideoCapture(vidpath)
-    vid.set(cv2.CAP_PROP_FPS, 10)
+    vid.set(cv2.CAP_PROP_FPS, 1)
     vid.set(cv2.CAP_PROP_FRAME_WIDTH, 254)
     vid.set(cv2.CAP_PROP_FRAME_HEIGHT, 254)
     vid.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc('M', 'P', '4', 'V'))
